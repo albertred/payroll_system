@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Enterprise Payroll Management System</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+  </head>
+
+
+  <body>
+
+    <!-- Site's header -->
+    <div id="header">
+      <div class="left">
+        <img src="/static/image/logo.png" >
+      </div>
+      <div class="middle">
+        Enterprise Payroll Management System
+      </div>
+      <div class="logout">
+        <a href="/logout">Logout</a>
+      </div>
+    </div>
+
+    <div id="content">
+      {% block content %}
+        upload content goes here
+      {% endblock %}
+    </div>
+
+    <div id="footer">
+      <div>
+        Telephone: 1-647-291-6638 <br>
+        Email: 1440068.ontario.inc@gmail.com
+      </div>
+    </div>
+
+  </body>
+
+</html>

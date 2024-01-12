@@ -1,0 +1,49 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <input type="file" id="chooseFile" name="document" accept=".xlsx">
+    <button id="upload_btn" type="submit">Upload</button>
+  </form>
+
+
+<script>
+
+
+
+//if not value.document.endswith('.xlsx'):
+      //raise ValidationError('This is not the correct file type')
+
+function onUpload(e) {
+  var chooseFileElement = document.getElementById('chooseFile');
+
+  if  (!!chooseFileElement.value) {
+    document.getElementById('spinner').style.visibility = 'visible';
+  } else {
+    e.preventDefault();
+  }
+}
+document.getElementById("upload_btn").addEventListener("click", onUpload);
+</script>
+
+
+  {% if error_message == None and request.method == 'POST' %}
+
+    <div id="result_ok">File is updated successfully!</div>
+  {% else %}
+    <div id="result_failed">{{ error_message }}</div>
+  {% endif %}
+
+<div class="my-img">
+  <img id = "spinner" src="static/image/Spinner-3.gif">
+</div>
+
+
+
+{% endblock %}
+
+

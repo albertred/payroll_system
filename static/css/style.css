@@ -1,0 +1,122 @@
+#header {
+    height: 6rem;
+    display: flex;
+    background-color: #aac961;
+    color: white;
+}
+
+#content {
+    width: 20rem;
+    margin-top: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20rem;
+}
+
+body {
+    margin: 0;
+}
+
+.left {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+}
+
+.left img {
+    margin-left: 2rem;
+}
+
+.logout {
+    padding-right: 0.5rem;
+}
+
+#footer{
+    align-items: center;
+    justify-content: center;
+    background-color: #aac961;
+    height: 5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    margin-top: 0.9rem;
+    color: #666565;
+}
+
+.middle {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    font-size: xx-large
+}
+
+#container {
+    border: solid 1px;
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    padding: 2rem;
+}
+
+
+
+#Username {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#Password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Login {
+    display: flex;
+    max-width: 500px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#result_ok {
+    margin-top:0.5rem;
+    color: #6438e8;
+}
+
+#result_failed {
+    margin-top:0.5rem;
+    color: #ed992b;
+}
+
+.my-img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-img img {
+  width: 50px;
+  height: 50px;
+}
+
+#spinner {
+ visibility: hidden
+}
